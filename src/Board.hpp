@@ -7,11 +7,13 @@ class Board {
 public:
     Board();
 
-    std::vector<int> get_valid_moves();
+    std::vector<char> GetValidMoves();
     void show();
 
+    bool CheckIfValidMove(char move);
     char board[3][3];
     char turn;
+    int isRobotActive;
 
 private:
 };
